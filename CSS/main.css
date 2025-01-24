@@ -15,6 +15,11 @@ h6 {
 
 }
 
+p,
+a {
+  font-family: "Roboto", serif;
+}
+
 /* header */
 header{
   background: linear-gradient(to right, rgb(192, 56, 255), rgb(81, 85, 190));
@@ -187,6 +192,10 @@ nav a{
   font-size: 11pt;
 }
 
+.interior-img{
+  width: 100%;
+ }
+
 .video-frame{
   padding: 40px;
 }
@@ -201,7 +210,7 @@ nav a{
 
 /* Footer */
 footer{
-  background: linear-gradient(rgb(191, 99, 219), rgb(49, 22, 112));
+  background: rgb(47, 47, 47);
   padding: 30px;
   color: aliceblue;
   text-align: center;
@@ -224,8 +233,14 @@ footer{
    }
 
 }
-/* stles for mobile */
+/* styles for mobile */
 @media (max-width: 600px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 20px;
+  }
   .intro-txt h1{
     font-size: 1.5em;
   }
@@ -236,11 +251,11 @@ footer{
     grid-template-columns: auto;
    }
    .interior-container{
-    flex-direction: 100%;
+    flex-direction: column;
+    padding-top: 50px;
    }
-   .interior-img{
+   .interior-img img{
     width: 100%;
-    padding: 50px;
    }
 }
 /* End of Responsiveness */
